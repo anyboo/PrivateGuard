@@ -1,0 +1,22 @@
+﻿<style>
+<class name=mainhead skin=bg_top font=0000 crtext=000000 crbg=FFFFFF x-margin=0/>
+<class name=mainbody skin=bg_body font=0000 crtext=000000 crbg=FFFFFF x-margin=2 linespacing=10/>
+<class name=mainfoot skin=bg_bottom font=0000 crtext=000000 crbg=FFFFFF margin=10 linespacing=20/>
+
+  <class name="msgbox_head" skin="msgbox_head" font="0000" crtext="3D5E74" crbg="F7FBFD"/>
+  <class name="msgbox_body" skin="msgbox_body" font="0000" crtext="3D5E74" crbg="F7FBFD" x-margin="2" y-margin="2"/>
+  
+  <class name="dlgtitle" crtext="b9dff9"/>
+  <class name="statustext" crtext="b9dff9"/>
+  <class name="graytext" crtext="666666"/>
+
+  
+  <class name="bg_panel" skin="bg_panel" font="0000" crtext="000000" linespacing="10"/>
+  <class name="linktext" font="0000" hoverfont="0000" crtext="3064A5" crhover="3064A5" cursor="hand"/>
+  <class name="bigrichtext" font="0a04"/>
+  <class name="tabpageblue" margin="0" crbg="E8F5FB" crtext="000000"/>
+  <class name=normalbtn skin=normalbtn font=0000 crtext=000000 textmode=25 cursor=hand x-margin=5/>
+
+  <class name="logondlg_head" skin="logondlg_head" font="0000" crtext="3D5E74" crbg="F7FBFD"/>
+  <class name="logondlg_body" skin="logondlg_body" font="0000" crtext="3D5E74" crbg="F7FBFD" x-margin="2" y-margin="2"/>
+</style>

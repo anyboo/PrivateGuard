@@ -1,0 +1,65 @@
+﻿<skins>  
+  <gdiplusimgframe name="msgbox_head" src="1202" top="5"  left="5" crbg="0B5090"/>
+  <gdiplusimgframe name="msgbox_body" src="1203" top="5" left="10" crbg="EAEFF4"/>
+  
+  <png name="logo" src="1001"/>
+  <png name="logotext" src="1002"/>
+  
+
+  <gdiplusimgframe name="bg_body" src="1105" left="5" top="125" crbg="c3ebf3"/>
+  <gdiplusimgframe name="bg_bottom" src="1103" left="5" top="5"/>
+  <gdiplusimgframe name="bg_panel_white" src="1104" left="5" top="5"/>
+  <gdiplusimgframe name="bg_panel" src="1102" left="25" top="25" crbg="EAEFF4"/>
+
+  <png name="bg_lvl" src="1106"/>
+  
+  <png name="bg_btn_module" src="1201" subwidth="76"/>
+  
+  <png name="icons_loading" src="1301" subwidth="48"/>
+  <png name="icons_modules" src="1302" subwidth="54"/>
+  <png name="icons_steps_auto" src="1303" subwidth="352"/>
+  <png name="icons_digital" src="1304" subwidth="66"/>
+  <png name="icons_warning" src="1305"/>
+  <png name="icons_check" src="1306"/>
+  <png name="icons_av" src="1307" subwidth="16"/>
+
+
+  <png name="btn_continue" src="1501" subwidth="200"/>
+  <png name="btn_manual" src="1502" subwidth="200"/>
+  <png name="btn_ok" src="1503" subwidth="86"/>
+  <png name="btn_rescan" src="1504" subwidth="200"/>
+  <png name="btn_rescan2" src="1505" subwidth="200"/>
+  <png name="btn_performance" src="1508" subwidth="200"/>
+  <png name="btn_rescan_small" src="1509" subwidth="150"/>
+  <png name="btn_close" src="1506" subwidth="42"/>
+  <png name="btn_minimize" src="1507" subwidth="32"/>
+  <png name="tab_create" src="1511" subwidth="112"/>
+  <png name="tab_load" src="1512" subwidth="112"/>
+  <png name="btn_next" src="1513" subwidth="86"/>
+  <png name="btn_cancel" src="1514" subwidth="86"/>
+  <png name="btn_browse" src="1515" subwidth="86"/>
+  <png name="btn_create" src="1516" subwidth="120"/>
+  <png name="btn_load" src="1517" subwidth="86"/>
+  <png name="tab_setpw" src="1518" subwidth="112"/>
+  <png name="tab_about" src="1519" subwidth="112"/>
+  <png name="btn_login" src="1520" subwidth="74"/>
+
+  <png name="btn_openudisk" src="1600" subwidth="210"/>
+  <png name="btn_closeudisk" src="1601" subwidth="210"/>
+  
+  <png name="bg_btn_module" src="1201" subwidth="76"/>
+  <png name="bg_logo_left" src="1003" subwidth="226"/>
+
+  <png name="bg_logon_dog" src="1703" subwidth="269"/>
+  <png name="bg_logon_saying" src="1704" subwidth="538"/>
+  <png name="bg_logon_arrow" src="1705" subwidth="32"/>
+  <png name="bg_logon_small" src="1706" subwidth="358"/>
+
+  <button name=normalbtn border=7D9EBC bg=FBFCFD bgup=FEFEFE bgdown=C6E2FD bguphover=FEFEFE bgdownhover=DBEDFE bguppush=C6E2FD bgdownpush=FEFEFE/>
+
+  <png name="btn_share" src="1510" subwidth="321"/>
+
+ <gdiplusimgframe name="logondlg_head" src="1701" top="5"  left="5" crbg="0B5090"/>
+ <gdiplusimgframe name="logondlg_body" src="1702" top="5" left="10" crbg="EAEFF4"/>
+
+</skins>

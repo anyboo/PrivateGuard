@@ -1,0 +1,100 @@
+#pragma once
+
+//////////////////////////////////////////////////////////////////////////
+// XML
+DEFINE_XML(IDR_BK_SKIN_APP,                 1000, "res\\app_skin.xml")
+DEFINE_XML(IDR_BK_STYLE_APP,                1001, "res\\app_style.xml")
+DEFINE_XML(IDR_BK_STRING_APP,               1002, "res\\app_string.xml")
+DEFINE_XML(IDR_BK_MAIN_DIALOG,              1010, "res\\dlg_main.xml")
+DEFINE_XML(IDR_BK_MESSAGEBOX,              1011, "res\\dlg_msgbox.xml")
+DEFINE_XML(IDR_BK_LOGO_DIALOG,              1012, "res\\dlg_logon.xml")
+
+
+//////////////////////////////////////////////////////////////////////////
+// ICON
+DEFINE_ICO(IDI_APPICON,						1000, "res\\appicon.ico")
+DEFINE_ICO(IDI_APPICONSMALL,				1001, "res\\appicon_small.ico")
+
+//////////////////////////////////////////////////////////////////////////
+// PNG
+DEFINE_PNG(IDP_TITLE_LOGO,				1001, "res\\logo.png")
+DEFINE_PNG(IDP_TITLE_LOGOTEXT,			1002, "res\\logo_text.png")
+DEFINE_PNG(IDP_TITLE_LOGOLEFT,			1003, "res\\logo_left.png")
+
+
+DEFINE_PNG(IDB_PNG_BG_TOP,				1101,	"res\\bg_title.png")
+DEFINE_PNG(IDB_PNG_BG_BOTTOM,			1103,	"res\\bg_bottom.png")
+DEFINE_PNG(IDB_PNG_BG_PANEL_WHITE,		1104,	"res\\bg_panel_white.png")
+DEFINE_PNG(IDB_PNG_BG_BODY,				1105,	"res\\bg_body.png")
+DEFINE_PNG(IDB_PNG_BG_LVL,				1106,	"res\\bg_lvl.png")
+DEFINE_PNG(IDB_PNG_BG_PANEL,			1102,	"res\\bg_panel.png")
+DEFINE_PNG(IDB_PNG_BG_BTN_MODULE,		1201,	"res\\bg_btn_module.png")
+DEFINE_PNG(IDB_PNG_BG_MSGBOX_HEADER,	1202,	"res\\bg_msgbox_header.png")
+DEFINE_PNG(IDB_PNG_BG_MSGBOX_BODY,		1203,	"res\\bg_msgbox_body.png")
+
+
+
+DEFINE_PNG(IDB_PNG_ICONS_LOADING,		1301,	"res\\icons_loading.png")
+DEFINE_PNG(IDB_PNG_ICONS_MODULES,		1302,	"res\\icons_module.png")
+DEFINE_PNG(IDB_PNG_ICONS_STEPS_AUTO,	1303,	"res\\icons_steps_auto.png")
+DEFINE_PNG(IDB_PNG_ICONS_DIGITAL,		1304,	"res\\icons_digital.png")
+DEFINE_PNG(IDB_PNG_ICONS_WARNING,		1305,	"res\\icons_warning.png")
+DEFINE_PNG(IDB_PNG_ICONS_CHECK,			1306,	"res\\icons_check.png")
+DEFINE_PNG(IDB_PNG_ICONS_AV,			1307,	"res\\icons_av.png")
+
+
+
+
+
+DEFINE_PNG(IDB_PNG_BTN_CONTINUE,		1501,	"res\\btn_continue.png")
+DEFINE_PNG(IDB_PNG_BTN_MANUAL,			1502,	"res\\btn_manual.png")
+DEFINE_PNG(IDB_PNG_BTN_OK,				1503,	"res\\btn_ok.png")
+DEFINE_PNG(IDB_PNG_BTN_RESCAN,			1504,	"res\\btn_rescan.png")
+DEFINE_PNG(IDB_PNG_BTN_RESCAN2,			1505,	"res\\btn_rescan2.png")
+DEFINE_PNG(IDB_PNG_BTN_CLOSE,			1506,	"res\\btn_Close.png")
+DEFINE_PNG(IDB_PNG_BTN_MINIMIZE,		1507,	"res\\btn_Minimize.png")
+DEFINE_PNG(IDB_PNG_BTN_PERFORMANCE,		1508,	"res\\btn_performance.png")
+DEFINE_PNG(IDB_PNG_BTN_RESCAN_SMALL,	1509,	"res\\btn_rescan_small.png")
+
+
+DEFINE_PNG(IDB_PNG_BTN_SHARE,			1510,	"res\\btn_share.png")
+DEFINE_PNG(IDB_PNG_TAB_CREATE,			1511,	"res\\tab_create.png")
+DEFINE_PNG(IDB_PNG_TAB_LOAD,			1512,	"res\\tab_load.png")
+DEFINE_PNG(IDB_PNG_BTN_NEXT,			1513,	"res\\btn_next.png")
+DEFINE_PNG(IDB_PNG_BTN_CANCEL,			1514,	"res\\btn_cancel.png")
+DEFINE_PNG(IDB_PNG_BTN_BROWSE,			1515,	"res\\btn_browse.png")
+DEFINE_PNG(IDB_PNG_BTN_CREATE,			1516,	"res\\btn_create.png")
+DEFINE_PNG(IDB_PNG_BTN_LOAD,			1517,	"res\\btn_load.png")
+DEFINE_PNG(IDB_PNG_TAB_SETPW,			1518,	"res\\tab_setpw.png")
+DEFINE_PNG(IDB_PNG_TAB_ABOUT,			1519,	"res\\tab_about.png")
+DEFINE_PNG(IDB_PNG_BTN_LOGIN,			1520,	"res\\btn_login.png")
+
+DEFINE_PNG(IDB_PNG_BTN_UOPEN,			1600,	"res\\btn_uopen.png")
+DEFINE_PNG(IDB_PNG_BTN_UCLOSE,			1601,	"res\\btn_uclose.png")
+
+DEFINE_PNG(IDB_PNG_BG_LOGON_HEADER,			1701,	"res\\btn_uopen.png")
+DEFINE_PNG(IDB_PNG_BG_LOGON_BODY,			1702,	"res\\btn_uclose.png")
+DEFINE_PNG(IDB_PNG_BG_LOGON_DOG,			1703,	"res\\bg_logon_dog.png")
+DEFINE_PNG(IDB_PNG_BG_LOGON_SAYING,			1704,	"res\\bg_logon_saying.png")
+DEFINE_PNG(IDB_PNG_BG_LOGON_ARROW,			1705,	"res\\bg_arrow.png")
+DEFINE_PNG(IDB_PNG_BG_LOGON_SMALL,			1706,	"res\\bg_logon_small.png")
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+// BMP
+//DEFINE_BMP(IDB_ICON_STATUS,						1000, "res\\iconstatuslist.bmp")
+//DEFINE_BMP(IDB_BTN_NORMAL_BG,					1001, "res\\btn_normal_bg.bmp")
+//DEFINE_BMP(IDB_FRAME_DIALOG,					1002, "res\\frame_dialog.bmp")
+//DEFINE_BMP(IDB_TAB,								1003, "res\\tab.bmp")
+//DEFINE_BMP(IDB_PROGRESS_BAR_POS,				1007, "res\\progress_bar_pos.bmp")
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BKRES
+//
+
+
+

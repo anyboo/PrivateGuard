@@ -1,0 +1,13 @@
+﻿<string>
+  <s id="1">私密卫士 标准版</s>
+  <s id="28">&lt;button id=%d pos="%d,11,%d,-11" class=smallbtn&gt;%s&lt;/button&gt;</s>
+  <s id="29">&lt;dlg pos="|-%d,0,|%d,-0"&gt;%s&lt;/dlg&gt;</s>
+  <s id="30">确定</s>
+  <s id="31">取消</s>
+  <s id="32">放弃</s>
+  <s id="33">重试</s>
+  <s id="34">忽略</s>
+  <s id="35">是</s>
+  <s id="36">否</s>
+  <s id="37">继续</s>
+</string>

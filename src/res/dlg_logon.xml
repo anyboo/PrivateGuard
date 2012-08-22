@@ -1,0 +1,130 @@
+﻿<layer title="私密卫士1.0" width="750" height="500" appwin="1" resize="1">
+  <header class="mainhead" width="full" height="110">
+    <imgbtn pos="52,12" skin="bg_logo_left"/>
+    <imgbtn id="60003" class="linkimage" skin="btn_minimize" pos="-77,0"/>
+    <imgbtn id="60001" class="linkimage" skin="btn_close" pos="-45,0"/>
+  </header>
+  <footer class="mainfoot" width="full" height="22">
+    <dlg id="260" pos="10,|-8,280,|8">
+      <text pos="0,1" class="statustext">主程序版本：</text>
+      <text id="261" pos="73,1" class="statustext">1.0.0.1</text>
+    </dlg>
+  </footer>
+
+  <body class="mainbody" width="full" height="full">
+    <!--注册-->
+    <dlg id="10000" pos="0,0,-0,-0" crbg="E7E7E7" show="0">
+      <imgbtn pos="200,28" skin="bg_logon_saying" transparent="1"/>
+      <imgbtn pos="16,170" skin="bg_logon_dog" transparent="1"/>
+      <richtext pos="220,48,-20,-40" transparent="1" defaultfont="0104">
+        <c color='E6BB48'>注册使用向导</c>
+      </richtext>
+      <!--设置用户名密码页面-->
+      <dlg id="11000" pos="210,62,-20,-40" show="1">
+        <richtext pos="10,26,134,46">
+          <c color='0061ac'>1.设置用户名和密码</c>
+        </richtext>
+        <imgbtn pos="136,22" skin="bg_logon_arrow" transparent="1"/>
+        <text pos="186,26">2.设置紧急拯救密码</text>
+        <imgbtn pos="312,22" skin="bg_logon_arrow" transparent="1"/>
+        <text pos="362,26">3.设置新密码</text>
+        <text pos="86,106">用户名:</text>
+        <realwnd id="11010" ctrlid="11010" pos="150,102,400,122"/>
+        <text pos="86,136">密码:</text>
+        <realwnd id="11011" ctrlid="11011" pos="150,132,400,152"/>
+        <text pos="86,166">确认密码:</text>
+        <realwnd id="11012" ctrlid="11012" pos="150,162,400,182"/>
+      </dlg>
+      <!--设置紧急密码页面-->
+      <dlg id="12000" pos="210,62,-20,-40" show="0">
+        <text pos="10,26">1.设置用户名和密码</text>
+        <imgbtn pos="136,22" skin="bg_logon_arrow" transparent="1"/>
+        <richtext pos="186,26,310,46"><c color='0061ac'>2.设置紧急拯救密码</c></richtext>
+        <imgbtn pos="312,22" skin="bg_logon_arrow" transparent="1"/>
+        <text pos="362,26">3.设置新密码</text>
+        <richtext pos="0,56,-0,96">紧急拯救密码相当于保险箱的备用钥匙, 当你忘记用户密码时, 可通过输入已设置的紧急拯救密码来开启保险箱。请牢记紧急拯救密码, 若同时忘记用户密码和紧急拯救密码, 将无法开启保险箱!</richtext>
+        <text pos="56,106">输入紧急拯救密码:</text>
+        <realwnd id="12010" ctrlid="12010" pos="170,102,400,122"/>
+        <text pos="56,136">确认紧急拯救密码:</text>
+        <realwnd id="12011" ctrlid="12011" pos="170,132,400,152"/>
+      </dlg>
+      <imgbtn id="1001" pos="360,-88" class="linkimage" skin="btn_next"/>
+      <imgbtn id="1002" pos="480,-88" class="linkimage" skin="btn_cancel"/>
+    </dlg>
+
+    <!--忘记密码-->
+    <dlg id="20000" pos="0,0,-0,-0" crbg="E7E7E7" show="0">
+      <imgbtn pos="200,28" skin="bg_logon_saying" transparent="1"/>
+      <imgbtn pos="16,170" skin="bg_logon_dog" transparent="1"/>
+      <richtext pos="220,48,-20,-40" transparent="1" defaultfont="0104">
+        <c color='FF0000'>忘记密码, 怎么办?</c>
+      </richtext>
+      <!--输入用户名页面-->
+      <dlg id="21000" pos="210,62,-20,-40" show="1">
+        <richtext pos="10,26,100,46">
+          <c color='0061ac'>1.输入用户名</c>
+        </richtext>
+        <imgbtn pos="100,22" skin="bg_logon_arrow" transparent="1"/>
+        <text pos="150,26">2.输入紧急拯救密码</text>
+        <imgbtn pos="276,22" skin="bg_logon_arrow" transparent="1"/>
+        <text pos="326,26">3.设置新密码</text>
+        <text pos="56,106">请输入您的用户名: </text>
+        <realwnd id="21010" ctrlid="21010" pos="170,102,400,122"/>
+      </dlg>
+      <!--输入紧急密码页面-->
+      <dlg id="22000" pos="210,62,-20,-40" show="0">
+        <text pos="10,26">1.输入用户名</text>
+        <imgbtn pos="100,22" skin="bg_logon_arrow" transparent="1"/>
+        <richtext pos="150,26,274,46">
+          <c color='0061ac'>2.输入紧急拯救密码</c>
+        </richtext>
+        <imgbtn pos="276,22" skin="bg_logon_arrow" transparent="1"/>
+        <text pos="326,26">3.设置新密码</text>
+        <text pos="0,66">紧急拯救密码相当于保险箱的备用钥匙, 当你忘记用户密码时, 可用紧急拯救密码来重设用户密码!</text>
+        <text pos="26,106">请输入您的紧急拯救密码: </text>
+        <realwnd id="22010" ctrlid="22010" pos="170,102,400,122"/>
+      </dlg>
+      <!--重设密码页面-->
+      <dlg id="23000" pos="210,62,-20,-40" show="0">
+        <text pos="10,26">1.输入用户名</text>
+        <imgbtn pos="100,22" skin="bg_logon_arrow" transparent="1"/>
+        <text pos="150,26">2.输入紧急拯救密码</text>
+        <imgbtn pos="276,22" skin="bg_logon_arrow" transparent="1"/>
+        <text pos="326,26">3.设置新密码</text>
+        <richtext pos="326,26,-10,46">
+          <c color='0061ac'>3.设置新密码</c>
+        </richtext>
+        <richtext pos="180,60,260,90" defaultfont="0304">
+          <c color='FF0000'>校验成功!</c>
+        </richtext>
+        <text pos="56,106">请输入新密码: </text>
+        <realwnd id="23010" ctrlid="23010" pos="150,102,400,122"/>
+        <text pos="56,136">请确认新密码: </text>
+        <realwnd id="23011" ctrlid="23011" pos="150,132,400,152"/>
+      </dlg>
+      <imgbtn id="1003" pos="360,-88" class="linkimage" skin="btn_next"/>
+      <imgbtn id="1004" pos="480,-88" class="linkimage" skin="btn_cancel"/>
+    </dlg>
+
+    <!--登陆页面-->
+    <dlg id="30000" pos="0,0,-0,-0" crbg="E7E7E7" show="1">
+      <dlg pos="352,66,-20,284">
+        <imgbtn pos="0,0" skin="bg_logon_small" transparent="1"/>
+        <text pos="36,6,200,32" crtext="E6BB48" font="0204">登陆私密卫士</text>
+        <text pos="36,60" font="0200">用户名: </text>
+        <realwnd id="31010" ctrlid="31010" pos="100,58,320,78"/>
+        <text pos="36,100" font="0200">密码: </text>
+        <realwnd id="31011" ctrlid="31011" pos="100,98,320,118"/>
+        <link id="1005" class="linktext" pos="100,-80" crtext="E6BB48" font="0104">忘记密码了? 请点击这里>> </link>
+        <imgbtn id="1006" pos="100,-46" skin="btn_login"/>
+        <link id="1007" pos="200,-38" class="linktext" crtext="E6BB48" font="0104"> 注册>></link>
+      </dlg>
+
+      <imgbtn pos="30,12" skin="bg_logon_dog" transparent="1"/>
+      <richtext pos="36,216,320,242" defaultfont="0300">"私密卫士"</richtext>
+      <richtext pos="36,242,320,268" defaultfont="0300">新一代个人文档防泄密产品</richtext>
+      <richtext pos="36,268,340,294" defaultfont="0300">保护用户电脑和移动存贮介质中的数据安全</richtext>
+    </dlg>
+
+  </body>
+</layer>

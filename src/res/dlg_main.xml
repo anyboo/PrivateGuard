@@ -1,0 +1,221 @@
+﻿<layer title="私密卫士1.0" width="750" height="500" appwin="1" resize="1">
+  <header class="mainhead" width="full" height="25">
+    <text id="60004" class="dlgtitle" pos="7,7">%str1%</text>
+    <imgbtn id="60003" class="linkimage" skin="btn_minimize" pos="-77,0"/>
+    <imgbtn id="60001" class="linkimage" skin="btn_close" pos="-45,0"/>
+  </header>
+  <footer class="mainfoot" width="full" height="22">
+    <dlg id="260" pos="10,|-8,280,|8">
+      <text pos="0,1" class="statustext">主程序版本：</text>
+      <text id="261" pos="73,1" class="statustext">1.0.0.1</text>
+    </dlg>
+  </footer>
+
+  <body class="mainbody" width="full" height="full">
+    <imgbtn pos="-170,8" skin="logotext"/>
+
+    <tabctrl id="10000" crtext="ffffff" tabwidth="76" tabheight="74" tabskin="bg_btn_module" frameskin="bg_panel" iconskin="icons_modules"  tabspacing="50" tabpos="10" framepos="4" pos="0,8,-0,-1" icon-x="13" icon-y="4" text-x="0" text-y="28">
+      <tab title="保险箱" width="full" height="full" crtext="000000">
+        <dlg id="10001" pos="0,0,-0,-0" show="1" crbg="E7E7E7">
+          <richtext id="1000" pos="20,16,300,40" transparent="1" defaultfont="0204">
+            <c color='0061ac'>创建保险箱</c>
+          </richtext>
+          <imgbtn id="1001" pos="20,40" class="linkimage" skin="tab_create" />
+          <imgbtn id="1002" pos="132,40" class="linkimage" skin="tab_load"/>
+          <dlg id="1100"  pos="21,71,-20,-40" crbg="FFFFFF">
+            <!--创建保险箱页-->
+            <dlg id="1101" pos="0,0,-0,-0" show="1" crbg="FFFFFF">
+              <richtext id="1102" pos="60,26,160,46" transparent="1" align="right">保险箱名称：</richtext>
+              <realwnd id="1103" ctrlid="1103" pos="162,20,400,40"/>
+
+              <richtext id="1104" pos="60,66,160,86" transparent="1" align="right">设置保险箱容量：</richtext>
+              <realwnd id="1105" ctrlid="1105" pos="162,60,400,80"/>
+              <richtext pos="410,66,-40,86" transparent="1" align="right">MB（1G=1024MB）</richtext>
+
+              <richtext id="1106" pos="60,106,160,126" transparent="1" align="right">映射的磁盘盘符：</richtext>
+              <realwnd id="1107" ctrlid="1107" pos="162,100,400,120"/>
+
+              <richtext id="1108" pos="60,146,160,166" transparent="1" align="right">设置保险箱位置：</richtext>
+              <realwnd id="1109" ctrlid="1109" pos="162,140,400,160"/>
+              <imgbtn id="1110" pos="410,135" class="linkimage" skin="btn_browse"/>
+            </dlg>
+
+            <!--加载保险箱页-->
+            <dlg id="1201" pos="0,0,-0,-0" show="0" crbg="FFFFFF">
+              <richtext id="1201" pos="60,26,500,60" transparent="1" align="right">在安装"私密卫士"软件后，若您的计算机进行系统重装，请导入原有的保险箱，保险箱导入成功后，才能正常打开保险箱。</richtext>
+              <richtext id="1202" pos="80,86,160,106" transparent="1" align="right">加载保险箱：</richtext>
+              <realwnd id="1203" ctrlid="1203" pos="162,80,400,100"/>
+              <imgbtn id="1204" pos="410,75" class="linkimage" skin="btn_browse"/>
+            </dlg>
+          </dlg>
+          <hr pos="20,70,20,-40" crbg="A3BAD2"/>
+          <hr pos="-20,70,-20,-40" crbg="A3BAD2"/>
+          <hr pos="244,70,-20,70" crbg="A3BAD2"/>
+          <hr pos="20,-40,-20,-40" crbg="A3BAD2"/>
+          <imgbtn id="1003" pos="300,-38" class="linkimage" skin="btn_next"/>
+          <imgbtn id="1004" pos="400,-38" class="linkimage" skin="btn_cancel"/>
+        </dlg>
+
+        <!--保险箱首页-->
+        <dlg id="10002" pos="0,0,-0,-0" crbg="E7E7E7" show="0">
+          <imgbtn id="1301" pos="600,100" class="linkimage" skin="btn_create"/>
+          <imgbtn id="1302" pos="600,160" class="linkimage" skin="btn_load"/>
+          <realwnd id="1303" ctrlid="1303" pos="20,20,580,-60"/>
+        </dlg>
+      </tab>
+
+      <tab title="安全U盘" width="full" height="full" crtext="000000">
+        <dlg pos="0,0,-0,-0" crbg="E7E7E7">
+          <dlg pos="20,40,-20,-40" crbg="FFFFFF">
+            <dlg id="2100" pos="30,20,-30,-50" show="1">
+              <text id="2101" pos="0,1" crtext="0061ac" font="0204">为了您的数据安全，请开启安全U盘！</text>
+              <imgbtn id="2102" pos="|-100,|-40" class="linkimage" skin="btn_openudisk">
+                <text pos="0,1" crtext="0061ac" font="0204">开启安全U盘</text>
+              </imgbtn>
+            </dlg>
+
+            <dlg id="2200" pos="30,20,-30,-50" show="0">
+              <img id="2202" pos="|-30,|-36" skin="icons_loading" transparent="1" sub="0"/>
+              <text id="2201" pos="0,1" crtext="0061ac" font="0204">正在执行操作……</text>
+            </dlg>
+
+            <dlg id="2300" pos="30,20,-30,-50" show="0">
+              <text id="2301" pos="0,1" crtext="0061ac" font="0204">为了您的数据安全，使用完后，请及时关闭安全U盘！</text>
+              <imgbtn id="2302" pos="|-100,|-40" class="linkimage" skin="btn_closeudisk">
+                <text pos="0,1" crtext="0061ac" font="0204">关闭安全U盘</text>
+              </imgbtn>
+            </dlg>
+
+          </dlg>
+
+          <hr pos="20,40,20,-40" crbg="A3BAD2"/>
+          <hr pos="-20,40,-20,-40" crbg="A3BAD2"/>
+          <hr pos="20,40,-20,40" crbg="A3BAD2"/>
+          <hr pos="20,-40,-20,-40" crbg="A3BAD2"/>
+
+        </dlg>
+      </tab>
+
+      <tab title="痕迹擦除" width="full" height="full" crtext="000000">
+        <dlg id="30001" pos="0,0,-0,-0" crbg="E7E7E7">
+          <!--扫描结果界面-->
+          <dlg id="3100"  pos="0,0,-200,80" crbg="FFFFFF" show="0">
+            <img pos="10,20" skin="icons_warning" transparent="1"/>
+            <richtext id="3101" pos="60,20,300,60" transparent="1">
+              <c color='0061ac'>
+                扫描已完成！<br/>扫描6处痕迹
+              </c>
+            </richtext>
+            <link id="3102" class="linktext" pos="200,30"> 重新扫描 </link>
+            <imgbtn id="3103" pos="-60,20" class="linkimage" skin="btn_minimize" />
+          </dlg>
+          <!--正在清理界面-->
+          <dlg id="3200"  pos="0,0,-200,80" crbg="FFFFFF" show="0">
+            <img pos="10,20" skin="icons_warning" transparent="1"/>
+            <richtext id="3201" pos="60,20,300,60" transparent="1">
+              <c color='0061ac'>正在清除..</c>
+            </richtext>
+            <imgbtn id="3202" pos="-60,20" class="linkimage" skin="btn_minimize" />
+          </dlg>
+          <!--扫描中界面-->
+          <dlg id="3300"  pos="0,0,-200,80" crbg="FFFFFF" show="0">
+            <img pos="10,20" skin="icons_warning" transparent="1"/>
+            <progress id="3302" min="0" max="100" value="30" />
+            <imgbtn id="3303" pos="-60,20" class="linkimage" skin="btn_minimize" />
+          </dlg>
+          <!--清理结果界面-->
+          <dlg id="3400"  pos="0,0,-200,80" crbg="FFFFFF" show="0">
+            <img pos="10,20" skin="icons_warning" transparent="1"/>
+            <richtext id="3401" pos="60,20,300,60" transparent="1">
+              <c color='0061ac'>
+                清除已完成！<br/>清除6处痕迹
+              </c>
+            </richtext>
+            <richtext id="3402" pos="-116,20,-0,40" transparent="1">
+              <c color='0061ac'>用时：0.1秒</c>
+            </richtext>
+            <link id="3403" class="linktext" pos="-80,50"> 返回 </link>
+          </dlg>
+          <!--开始扫描界面-->
+          <dlg id="3500"  pos="0,0,-200,80" crbg="FFFFFF" show="0">
+            <img pos="10,20" skin="icons_warning" transparent="1"/>
+            <richtext id="3501" pos="60,20,300,60" transparent="1">
+              <c color='0061ac'>浏览网页、打开文档、观看视频...</c>
+            </richtext>
+            <imgbtn id="3502" pos="-60,20" class="linkimage" skin="btn_minimize" />
+          </dlg>
+          <!--下方列表界面-->
+          <dlg id="3600"  pos="0,80,-200,-0" crbg="66EE66" show="0">
+          </dlg>
+          <!--右边信息界面-->
+          <dlg id="3700"  pos="-200,0,-0,-0" crbg="FFCCFF" show="0">
+            <img pos="10,20" skin="icons_warning" transparent="1"/>
+            <richtext id="3701" pos="60,20,-10,60" transparent="1">
+              <c color='0061ac'>
+                清理频率：高<br/>您每隔0天清理一次
+              </c>
+            </richtext>
+            <richtext id="3702" pos="10,70,-10,90" transparent="1">
+              <c color='0061ac'>
+                上次:2012-08-02 本次:2012-08-02
+              </c>
+            </richtext>
+            <richtext id="3703" pos="10,100,-10,180" transparent="1">
+              <c color='0061ac'>
+                恭喜，清理频率为。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。继续保持。
+              </c>
+            </richtext>
+            <img pos="10,210" skin="icons_warning" transparent="1"/>
+            <link id="3704" class="linktext" pos="60,210"> 已删除文件恢复 </link>
+            <richtext id="3705" pos="60,230,-10,-10" transparent="1">
+              <c color='0061ac'>
+                误删除文件？。。。。。。。。。。。。。。。。。。。。。。。找回删除的文件
+              </c>
+            </richtext>
+          </dlg>
+          -->
+        </dlg>
+      </tab>
+
+      <tab title="系统设置" width="full" height="full" crtext="000000">
+        <dlg id="40001" pos="0,0,-0,-0" show="1" crbg="E7E7E7">
+          <imgbtn id="4001" pos="20,40" class="linkimage" skin="tab_setpw"/>
+          <imgbtn id="4002" pos="132,40" class="linkimage" skin="tab_about"/>
+          <dlg id="4100"  pos="21,71,-20,-40" crbg="FFFFFF">
+            <!--设置/修改密码页-->
+            <dlg id="4101" pos="0,0,-0,-0" show="1" crbg="FFFFFF">
+              <richtext id="4102" pos="60,26,160,46" transparent="1" align="right">请输入原始密码：</richtext>
+              <realwnd id="4103" ctrlid="4103" pos="162,20,400,40"/>
+
+              <richtext id="4104" pos="60,66,160,86" transparent="1" align="right">请输入新密码：</richtext>
+              <realwnd id="4105" ctrlid="4105" pos="162,60,400,80"/>
+
+              <richtext id="4106" pos="60,106,160,126" transparent="1" align="right">确认新密码：</richtext>
+              <realwnd id="4107" ctrlid="4107" pos="162,100,400,120"/>
+              <imgbtn id="4003" pos="300,-38" class="linkimage" skin="btn_ok"/>
+              <imgbtn id="4004" pos="400,-38" class="linkimage" skin="btn_cancel"/>
+            </dlg>
+
+            <!--关于我们页-->
+            <dlg id="4201" pos="0,0,-0,-0" show="0" crbg="FFFFFF">
+              <richtext id="4202" pos="60,20,300,40" transparent="1">
+                <c color='0061ac'>版本：1.0.0.1</c>
+              </richtext>
+              <realwnd id="4203" ctrlid="4203" pos="60,38,500,192"/>
+              <richtext id="4204" pos="60,200,300,220" transparent="1">
+                <c color='0061ac'>版权所有(C)2012-2016</c>
+              </richtext>
+            </dlg>
+          </dlg>
+
+          <hr pos="20,70,20,-40" crbg="A3BAD2"/>
+          <hr pos="-20,70,-20,-40" crbg="A3BAD2"/>
+          <hr pos="244,70,-20,70" crbg="A3BAD2"/>
+          <hr pos="20,-40,-20,-40" crbg="A3BAD2"/>
+        </dlg>
+      </tab>
+
+    </tabctrl>
+
+  </body>
+</layer>

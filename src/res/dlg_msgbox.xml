@@ -1,0 +1,18 @@
+﻿<layer>
+    <header class=msgbox_head width=full height=29>      
+      <text id=60020 class=dlgtitle pos="7,7">%str1%</text>
+      <imgbtn id="60001" class="linkimage" skin="btn_close" pos="-45,0"/>
+    </header>
+    <body class=msgbox_body width="full" height="full">
+      <dlg pos="0,0,-0,-0" crbg="E7E7E7">
+        <dlg pos="0,0,-0,-50">
+          <text id="60006" pos="16,16,-0,-0" class="msgtext"/>
+          <dlg show="0" id="60016" pos="16,16,-0,-0" class="msgtext"/>
+        </dlg>
+        <dlg pos="0,-50,-0,-0" class="client">
+          <imgbtn id="1" pos="|-100,5" class="linkimage" skin="btn_ok"/>
+          <imgbtn id="2" pos="|15,5" class="linkimage" skin="btn_cancel"/>
+        </dlg>
+      </dlg>    
+    </body>
+</layer>
