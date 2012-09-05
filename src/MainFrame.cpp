@@ -136,17 +136,26 @@ LRESULT CMainFrame::OnInitDialog(HWND /*hWnd*/, LPARAM /*lParam*/)
 
 void CMainFrame::CreateChildCtrl()
 {
+	m_font.CreatePointFont(90,_T("微软雅黑"));
+
 	m_edit_safeboxName.Create(GetViewHWND(), CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL, WS_EX_CLIENTEDGE);
-	m_edit_safeboxName.SetDlgCtrlID(1103);
+	m_edit_safeboxName.SetDlgCtrlID(1103);  
+	m_edit_safeboxName.SetFont(m_font.m_hFont);
+
 	m_edit_safeboxSize.Create(GetViewHWND(), CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL|ES_NUMBER, WS_EX_CLIENTEDGE);
 	m_edit_safeboxSize.SetDlgCtrlID(1105);
+	m_edit_safeboxSize.SetFont(m_font.m_hFont);
+
 	m_edit_safeboxLocation.Create(GetViewHWND(), CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL, WS_EX_CLIENTEDGE);
-	m_edit_safeboxLocation.SetDlgCtrlID(1109);
+	m_edit_safeboxLocation.SetDlgCtrlID(1109);  
+	m_edit_safeboxLocation.SetFont(m_font.m_hFont);
+
 	m_combo_driveList.Create(GetViewHWND(), CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|CBS_DROPDOWNLIST, WS_EX_CLIENTEDGE);
 	m_combo_driveList.SetDlgCtrlID(1107);
 
 	m_edit_safeboxDir.Create(GetViewHWND(), CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL, WS_EX_CLIENTEDGE);
-	m_edit_safeboxDir.SetDlgCtrlID(1203);
+	m_edit_safeboxDir.SetDlgCtrlID(1203);  
+	m_edit_safeboxDir.SetFont(m_font.m_hFont);
 
 	m_listview.Create(GetViewHWND(), CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|LVS_REPORT|LVS_SHOWSELALWAYS|LVS_SINGLESEL, WS_EX_CLIENTEDGE);
 	m_listview.SetDlgCtrlID(1303);
@@ -160,14 +169,27 @@ void CMainFrame::CreateChildCtrl()
 	m_listview.InsertColumn( 4, L"大小(MB)", LVCFMT_CENTER, 80 );
 
 	m_edit_oldPw.Create(GetViewHWND(), CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL|ES_PASSWORD, WS_EX_CLIENTEDGE);
-	m_edit_oldPw.SetDlgCtrlID(4103);
+	m_edit_oldPw.SetDlgCtrlID(4103);  
+	//m_edit_oldPw.SetFont(m_font.m_hFont);
+
 	m_edit_newPw.Create(GetViewHWND(), CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL|ES_PASSWORD, WS_EX_CLIENTEDGE);
-	m_edit_newPw.SetDlgCtrlID(4105);
+	m_edit_newPw.SetDlgCtrlID(4105);  
+	//m_edit_newPw.SetFont(m_font.m_hFont);
+
 	m_edit_repeatNewPw.Create(GetViewHWND(), CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL|ES_PASSWORD, WS_EX_CLIENTEDGE);
-	m_edit_repeatNewPw.SetDlgCtrlID(4107);
+	m_edit_repeatNewPw.SetDlgCtrlID(4107);  
+	//m_edit_repeatNewPw.SetFont(m_font.m_hFont);
+
 	m_edit_about.Create(GetViewHWND(), CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|WS_VSCROLL|ES_LEFT|ES_AUTOVSCROLL|ES_MULTILINE|ES_READONLY, WS_EX_CLIENTEDGE);
-	m_edit_about.SetDlgCtrlID(4203);
-	m_edit_about.SetWindowText(L"重要声明:\r\n版权归属………………………………………………………………………………………………………………………………………………end");
+	m_edit_about.SetDlgCtrlID(4203);  
+	m_edit_about.SetFont(m_font.m_hFont);
+	m_edit_about.SetWindowText(L"重要声明:\r\n私密卫士的版权归龙岩时讯信息科技有限公司所有, 未经时讯公司的明确许可, 任何单位或者个人不得擅自复制, 仿照, 非法使用。否则, 龙岩时讯信息科技有限公司将通过行政诉讼, 民事诉讼等方式追究侵权者的侵权责任。");
+
+	if (m_cleanerWnd.Create(GetViewHWND(), /*CWindow::rcDefault*/CRect(0,0,0,0), _T("KClear"))) 
+	{
+		m_cleanerWnd.SetDlgCtrlID(3010);
+		m_cleanerWnd.ShowWindow(SW_SHOW);
+	}
 }
 
 void CMainFrame::OpenSafeUDisk()

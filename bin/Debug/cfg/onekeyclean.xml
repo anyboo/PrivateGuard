@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<setting>
+    <strings>
+        <entry name="custom_entrys" value="9015,9017,9018,WIN_HUISHOUZHAN,WIN_TEMP,RST_APPPATH,9019,5001,5002,5003,5004,9030,5005,RST_MUICACHE,9031,5006,9032,RST_EXTHISTORY,9033,WIN_PRE,5008,2029,9002,9003,9004,9005,2010,RST_SHAREDDLL,9020,2011,9021,2012,2013,2016,9026,IE_TEMP,9027,2018,9028,2019,9029,RST_HELP,5013,WIN_UPDATE,2031,RST_OPENSAVEMRU,2032,WIN_ERRPORT,2034,2001,1004,9048,2002,1005,2003,U_TEMP,1006,RST_STARTMENU,2005," />
+        <entry name="last_summary" value="一共清理系统垃圾：37，未发现使用痕迹，未发现冗余注册表。" />
+        <entry name="last_use" value="2012.09.05" />
+        <entry name="makesure" value="no" />
+    </strings>
+    <integers />
+</setting>

@@ -39,7 +39,7 @@
   <png name="btn_cancel" src="1514" subwidth="86"/>
   <png name="btn_browse" src="1515" subwidth="86"/>
   <png name="btn_create" src="1516" subwidth="120"/>
-  <png name="btn_load" src="1517" subwidth="86"/>
+  <png name="btn_load" src="1517" subwidth="120"/>
   <png name="tab_setpw" src="1518" subwidth="112"/>
   <png name="tab_about" src="1519" subwidth="112"/>
   <png name="btn_login" src="1520" subwidth="74"/>

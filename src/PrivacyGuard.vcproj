@@ -187,6 +187,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\CleanerWnd.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\DlgMsgbox.cpp"
 				>
 			</File>
@@ -245,6 +249,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\CleanerWnd.h"
+				>
+			</File>
+			<File
 				RelativePath=".\DlgMsgbox.h"
 				>
 			</File>
@@ -291,6 +299,10 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
+				RelativePath=".\bin00001.bin"
+				>
+			</File>
+			<File
 				RelativePath=".\bkwinres.h"
 				>
 			</File>
@@ -300,6 +312,10 @@
 			</File>
 			<File
 				RelativePath=".\PrivacyGuard.rc"
+				>
+			</File>
+			<File
+				RelativePath=".\rt_manif.bin"
 				>
 			</File>
 			<Filter
@@ -567,10 +583,6 @@
 				</File>
 			</Filter>
 		</Filter>
-		<File
-			RelativePath=".\res\Master.manifest"
-			>
-		</File>
 	</Files>
 	<Globals>
 	</Globals>

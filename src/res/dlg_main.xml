@@ -98,82 +98,7 @@
 
       <tab title="痕迹擦除" width="full" height="full" crtext="000000">
         <dlg id="30001" pos="0,0,-0,-0" crbg="E7E7E7">
-          <!--扫描结果界面-->
-          <dlg id="3100"  pos="0,0,-200,80" crbg="FFFFFF" show="0">
-            <img pos="10,20" skin="icons_warning" transparent="1"/>
-            <richtext id="3101" pos="60,20,300,60" transparent="1">
-              <c color='0061ac'>
-                扫描已完成！<br/>扫描6处痕迹
-              </c>
-            </richtext>
-            <link id="3102" class="linktext" pos="200,30"> 重新扫描 </link>
-            <imgbtn id="3103" pos="-60,20" class="linkimage" skin="btn_minimize" />
-          </dlg>
-          <!--正在清理界面-->
-          <dlg id="3200"  pos="0,0,-200,80" crbg="FFFFFF" show="0">
-            <img pos="10,20" skin="icons_warning" transparent="1"/>
-            <richtext id="3201" pos="60,20,300,60" transparent="1">
-              <c color='0061ac'>正在清除..</c>
-            </richtext>
-            <imgbtn id="3202" pos="-60,20" class="linkimage" skin="btn_minimize" />
-          </dlg>
-          <!--扫描中界面-->
-          <dlg id="3300"  pos="0,0,-200,80" crbg="FFFFFF" show="0">
-            <img pos="10,20" skin="icons_warning" transparent="1"/>
-            <progress id="3302" min="0" max="100" value="30" />
-            <imgbtn id="3303" pos="-60,20" class="linkimage" skin="btn_minimize" />
-          </dlg>
-          <!--清理结果界面-->
-          <dlg id="3400"  pos="0,0,-200,80" crbg="FFFFFF" show="0">
-            <img pos="10,20" skin="icons_warning" transparent="1"/>
-            <richtext id="3401" pos="60,20,300,60" transparent="1">
-              <c color='0061ac'>
-                清除已完成！<br/>清除6处痕迹
-              </c>
-            </richtext>
-            <richtext id="3402" pos="-116,20,-0,40" transparent="1">
-              <c color='0061ac'>用时：0.1秒</c>
-            </richtext>
-            <link id="3403" class="linktext" pos="-80,50"> 返回 </link>
-          </dlg>
-          <!--开始扫描界面-->
-          <dlg id="3500"  pos="0,0,-200,80" crbg="FFFFFF" show="0">
-            <img pos="10,20" skin="icons_warning" transparent="1"/>
-            <richtext id="3501" pos="60,20,300,60" transparent="1">
-              <c color='0061ac'>浏览网页、打开文档、观看视频...</c>
-            </richtext>
-            <imgbtn id="3502" pos="-60,20" class="linkimage" skin="btn_minimize" />
-          </dlg>
-          <!--下方列表界面-->
-          <dlg id="3600"  pos="0,80,-200,-0" crbg="66EE66" show="0">
-          </dlg>
-          <!--右边信息界面-->
-          <dlg id="3700"  pos="-200,0,-0,-0" crbg="FFCCFF" show="0">
-            <img pos="10,20" skin="icons_warning" transparent="1"/>
-            <richtext id="3701" pos="60,20,-10,60" transparent="1">
-              <c color='0061ac'>
-                清理频率：高<br/>您每隔0天清理一次
-              </c>
-            </richtext>
-            <richtext id="3702" pos="10,70,-10,90" transparent="1">
-              <c color='0061ac'>
-                上次:2012-08-02 本次:2012-08-02
-              </c>
-            </richtext>
-            <richtext id="3703" pos="10,100,-10,180" transparent="1">
-              <c color='0061ac'>
-                恭喜，清理频率为。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。继续保持。
-              </c>
-            </richtext>
-            <img pos="10,210" skin="icons_warning" transparent="1"/>
-            <link id="3704" class="linktext" pos="60,210"> 已删除文件恢复 </link>
-            <richtext id="3705" pos="60,230,-10,-10" transparent="1">
-              <c color='0061ac'>
-                误删除文件？。。。。。。。。。。。。。。。。。。。。。。。找回删除的文件
-              </c>
-            </richtext>
-          </dlg>
-          -->
+          <realwnd id="3010" ctrlid="3010" pos="0,0,-0,-0"/>
         </dlg>
       </tab>
 
@@ -184,16 +109,16 @@
           <dlg id="4100"  pos="21,71,-20,-40" crbg="FFFFFF">
             <!--设置/修改密码页-->
             <dlg id="4101" pos="0,0,-0,-0" show="1" crbg="FFFFFF">
-              <richtext id="4102" pos="60,26,160,46" transparent="1" align="right">请输入原始密码：</richtext>
-              <realwnd id="4103" ctrlid="4103" pos="162,20,400,40"/>
+              <richtext id="4102" pos="60,36,160,56" transparent="1" align="right">请输入原始密码：</richtext>
+              <realwnd id="4103" ctrlid="4103" pos="162,30,400,50"/>
 
-              <richtext id="4104" pos="60,66,160,86" transparent="1" align="right">请输入新密码：</richtext>
-              <realwnd id="4105" ctrlid="4105" pos="162,60,400,80"/>
+              <richtext id="4104" pos="60,76,160,96" transparent="1" align="right">请输入新密码：</richtext>
+              <realwnd id="4105" ctrlid="4105" pos="162,70,400,90"/>
 
-              <richtext id="4106" pos="60,106,160,126" transparent="1" align="right">确认新密码：</richtext>
-              <realwnd id="4107" ctrlid="4107" pos="162,100,400,120"/>
-              <imgbtn id="4003" pos="300,-38" class="linkimage" skin="btn_ok"/>
-              <imgbtn id="4004" pos="400,-38" class="linkimage" skin="btn_cancel"/>
+              <richtext id="4106" pos="60,116,160,136" transparent="1" align="right">确认新密码：</richtext>
+              <realwnd id="4107" ctrlid="4107" pos="162,110,400,130"/>
+              <imgbtn id="4003" pos="250,-38" class="linkimage" skin="btn_ok"/>
+              <imgbtn id="4004" pos="380,-38" class="linkimage" skin="btn_cancel"/>
             </dlg>
 
             <!--关于我们页-->

@@ -6,7 +6,7 @@
 
 
  /* File created by MIDL compiler version 7.00.0500 */
-/* at Wed Aug 22 17:58:22 2012
+/* at Wed Sep 05 16:30:11 2012
  */
 /* Compiler settings for .\FormatCom.idl:
     Oicf, W1, Zp8, env=Win32 (32b run)

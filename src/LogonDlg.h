@@ -14,16 +14,12 @@ class CBaseSubWnd
 public:
 	CBaseSubWnd(int dlgCtrlID, T* pParent=NULL) : m_dlgCtrlID(dlgCtrlID), m_pParentWnd(pParent) {}
 
-	void Show(BOOL bShow = TRUE)
-	{
-		if (m_pParentWnd)
-			m_pParentWnd->SetItemVisible(m_dlgCtrlID, bShow);
-	}
+	void Show(BOOL bShow = TRUE) { if (m_pParentWnd) m_pParentWnd->SetItemVisible(m_dlgCtrlID, bShow); }
 
-	bool IsVisible()
-	{
-		return m_pParentWnd ? m_pParentWnd->IsItemVisible(m_dlgCtrlID) : false;
-	}
+	bool IsVisible() { return m_pParentWnd ? m_pParentWnd->IsItemVisible(m_dlgCtrlID) : false; }
+
+protected:
+	CFont m_font;
 
 private:
 	T *m_pParentWnd;
@@ -39,8 +35,12 @@ public:
 
 	void Create(HWND hParent)
 	{
+		m_font.CreatePointFont(90,_T("Î¢ÈíÑÅºÚ"));
+
 		m_edit_username.Create(hParent, CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL, WS_EX_CLIENTEDGE);
 		m_edit_username.SetDlgCtrlID(31010);
+		m_edit_username.SetFont(m_font.m_hFont);
+
 		m_edit_password.Create(hParent, CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL|ES_PASSWORD, WS_EX_CLIENTEDGE);
 		m_edit_password.SetDlgCtrlID(31011);
 	};
@@ -69,10 +69,15 @@ public:
 
 	void Create(HWND hParent)
 	{
+		m_font.CreatePointFont(90,_T("Î¢ÈíÑÅºÚ"));
+
 		m_edit_username.Create(hParent, CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL, WS_EX_CLIENTEDGE);
 		m_edit_username.SetDlgCtrlID(11010);
+		m_edit_username.SetFont(m_font.m_hFont);
+
 		m_edit_password.Create(hParent, CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL|ES_PASSWORD, WS_EX_CLIENTEDGE);
 		m_edit_password.SetDlgCtrlID(11011);
+
 		m_edit_confirmpassw.Create(hParent, CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL|ES_PASSWORD, WS_EX_CLIENTEDGE);
 		m_edit_confirmpassw.SetDlgCtrlID(11012);
 	};	
@@ -127,6 +132,7 @@ public:
 	{
 		m_edit_sparepassw.Create(hParent, CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL|ES_PASSWORD, WS_EX_CLIENTEDGE);
 		m_edit_sparepassw.SetDlgCtrlID(12010);
+
 		m_edit_confirmpassw.Create(hParent, CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL|ES_PASSWORD, WS_EX_CLIENTEDGE);
 		m_edit_confirmpassw.SetDlgCtrlID(12011);
 	};
@@ -172,8 +178,11 @@ public:
 
 	void Create(HWND hParent)
 	{
+		m_font.CreatePointFont(90,_T("Î¢ÈíÑÅºÚ"));
+
 		m_edit_username.Create(hParent, CRect(0,0,0,0), NULL, WS_CHILD|WS_VISIBLE|ES_LEFT|ES_AUTOHSCROLL, WS_EX_CLIENTEDGE);
 		m_edit_username.SetDlgCtrlID(21010);
+		m_edit_username.SetFont(m_font.m_hFont);
 	};
 
 	void ClearCtrlData()

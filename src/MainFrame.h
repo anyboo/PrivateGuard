@@ -4,6 +4,7 @@
 #include "SafeUDiskMgr.h"
 #include <atlutil.h>
 #include <string>
+#include "CleanerWnd.h"
 
 enum 
 {
@@ -119,6 +120,7 @@ protected:
 		BK_NOTIFY_TAB_SELCHANGE(10000, CMainFrame::OnTabSelChange)
 		BK_NOTIFY_MAP_END()
 
+
 		BEGIN_MSG_MAP_EX(CMainFrame)
 		MSG_BK_NOTIFY(IDC_RICHVIEW_WIN)
 		CHAIN_MSG_MAP( __base_class )
@@ -166,6 +168,8 @@ public:
 	void UnMountAll();
 
 public:
+	CFont m_font;
+
 	// UI Control
 	// ¥¥Ω®±£œ’œ‰ begin
 	CEdit m_edit_safeboxName;
@@ -188,4 +192,6 @@ public:
 	CEdit m_edit_newPw;
 	CEdit m_edit_repeatNewPw;
 	CEdit m_edit_about;
+
+	CCleanerWnd m_cleanerWnd;
 };
